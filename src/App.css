@@ -1,0 +1,23 @@
+.App {
+  min-height: 100vh;
+}
+.navBar{
+  margin: 0;
+  padding-left: 15px;
+  border-bottom: 1px solid #555252;
+  padding-bottom: 5px;
+}
+.title{
+  font-family: 'Rowdies';
+  font-weight: bold;
+}
+.subtext{
+  text-align: right;
+  padding-right: 5px;
+  color: #555252;
+}
+.images{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}

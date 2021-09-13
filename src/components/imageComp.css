@@ -1,0 +1,10 @@
+.images{
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #F9F5F5;
+    align-items: center;
+    min-width: 40%;
+}
