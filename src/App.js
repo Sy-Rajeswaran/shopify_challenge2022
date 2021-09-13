@@ -26,7 +26,7 @@ function App() {
                         image={post.img_src}
                         rovername={post.rover.name}
                         earthdate={post.earth_date}
-                        camername={post.camera.full_name}/>
+                        cameraname={post.camera.full_name}/>
             )})}
         </div>
     </div>
