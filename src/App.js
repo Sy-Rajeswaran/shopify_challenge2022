@@ -10,7 +10,7 @@ function App() {
         const response = await fetch(`https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=100&page=1&api_key=RYTZybWCgSxaUiaFjpgXnfw7ZELgP3BfG309fG9a`);
         const data = await response.json();
         setPosts(data.photos);
-        console.log(data.photos)
+        console.log(data.photos);//TODO: Take this away
     };
 
   return (
@@ -20,7 +20,7 @@ function App() {
           <p className="subtext">Brought to you by Mars Photos API </p>
       </div>
         <div className="images">
-            {posts.map(post => {console.log(post.rover.name)
+            {posts.map(post => {
              return(
                 <Images key={post.id}
                         image={post.img_src}

@@ -1,0 +1,20 @@
+.unlike{
+    margin-top: 10px;
+    margin-left: 20px;
+    width: 72px;
+    height: 38px;
+    border: 1px solid #C4C4C4;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: transparent;
+}
+.likes{
+    margin-top: 10px;
+    margin-left: 20px;
+    width: 72px;
+    height: 38px;
+    border: 1px solid #C4C4C4;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #FD0808;
+}
