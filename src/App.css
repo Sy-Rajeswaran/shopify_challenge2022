@@ -7,6 +7,9 @@
   padding-left: 15px;
   border-bottom: 1px solid #555252;
   padding-bottom: 5px;
+  position: sticky;
+  top: 0;
+  background-color: #FFFAFA;
 }
 .title{
   font-family: 'Rowdies';
