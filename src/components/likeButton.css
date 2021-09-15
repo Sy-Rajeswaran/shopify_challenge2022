@@ -7,14 +7,32 @@
     border-radius: 10px;
     cursor: pointer;
     background-color: transparent;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .likes{
     margin-top: 10px;
     margin-left: 20px;
     width: 72px;
     height: 38px;
-    border: 1px solid #C4C4C4;
+    border: 1px solid #000000;
     border-radius: 10px;
     cursor: pointer;
     background-color: #FD0808;
+    animation: wobble 1s 1;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+@keyframes wobble {
+    25% {
+        transform: rotate(15deg);
+    }
+    50% {
+        transform: rotate(-30deg);
+    }
+    75% {
+        transform: rotate(5deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
 }
