@@ -2,10 +2,11 @@ import './App.css'
 import React, {useState, useEffect} from "react";
 import Images from "./components/imageComp";
 function App() {
+    const [posts,setPosts]=useState([]);
     useEffect(()=>{
         getPosts()
     },[]);
-    const [posts,setPosts]=useState([]);
+
     const getPosts =async ()=>{
         const response = await fetch(`https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=100&page=1&api_key=RYTZybWCgSxaUiaFjpgXnfw7ZELgP3BfG309fG9a`);
         const data = await response.json();

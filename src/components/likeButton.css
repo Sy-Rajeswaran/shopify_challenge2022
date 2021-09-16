@@ -1,38 +1,30 @@
+
 .unlike{
     margin-top: 10px;
     margin-left: 20px;
-    width: 72px;
+    width: 30px;
     height: 38px;
-    border: 1px solid #C4C4C4;
-    border-radius: 10px;
     cursor: pointer;
     background-color: transparent;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .likes{
     margin-top: 10px;
     margin-left: 20px;
-    width: 72px;
+    width: 30px;
     height: 38px;
-    border: 1px solid #000000;
-    border-radius: 10px;
     cursor: pointer;
-    background-color: #FD0808;
-    animation: wobble 1s 1;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: #FD0808;
+    animation: pulsate-bck 0.5s ease-in-out;
 }
 
-@keyframes wobble {
-    25% {
-        transform: rotate(15deg);
+@keyframes pulsate-bck {
+    0% {
+        transform: scale(1);
     }
     50% {
-        transform: rotate(-30deg);
-    }
-    75% {
-        transform: rotate(5deg);
+        transform: scale(0.9);
     }
     100% {
-        transform: rotate(0deg);
+        transform: scale(1);
     }
 }

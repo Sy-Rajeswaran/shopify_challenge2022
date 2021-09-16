@@ -1,6 +1,6 @@
 .share{
     margin-top: 10px;
-    margin-left: 20px;
+    margin-left:10px;
     width: 72px;
     height: 38px;
     border: 1px solid #C4C4C4;
@@ -11,5 +11,6 @@
 }
 .share:hover{
     background-color: #08fdfd;
+    border: 1px solid #000000;
 }
 

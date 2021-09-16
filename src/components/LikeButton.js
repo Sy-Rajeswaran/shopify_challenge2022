@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from 'react'
+import {AiFillHeart} from 'react-icons/ai'
 import "./likeButton.css";
 
 function LikeButton(){
@@ -17,7 +18,7 @@ function LikeButton(){
     }
     let btn_state=like?"unlike":"likes";
     return(
-        <button className={btn_state} onClick={LikeFunc}>Like</button>
+        <AiFillHeart className={btn_state} onClick={LikeFunc} size="1.5x" />
     );
 }
 
