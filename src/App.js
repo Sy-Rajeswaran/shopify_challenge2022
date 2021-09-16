@@ -24,6 +24,7 @@ function App() {
             {posts.map(post => {
              return(
                 <Images key={post.id}
+                        ID={post.id}
                         image={post.img_src}
                         rovername={post.rover.name}
                         earthdate={post.earth_date}
