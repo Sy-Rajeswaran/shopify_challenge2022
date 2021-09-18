@@ -1,5 +1,5 @@
 # shopify_challenge2022
-Welcome to Spactagram a React webapp that uses the Nasa Mars Rover Photo API to share and like your favorite photos of Mars.
+Welcome to Spactagram a React webapp that uses the Nasa Mars Rover Photo API to share and like your favorite photos of Mars. Mars Rover Icon was created by Eucalyp from flaticon.
 
 # Demo
 [Spacetagram](https://festive-perlman-b5efb8.netlify.app/)
