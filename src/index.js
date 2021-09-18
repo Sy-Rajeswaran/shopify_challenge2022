@@ -2,11 +2,29 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import { usePromiseTracker } from "react-promise-tracker"
+import Loader from 'react-loader-spinner'
 import reportWebVitals from './reportWebVitals';
+// Loading indicator to track the promise of the API if promise in progress display the Loader
+const LoadingIndicator = props => {
+    const { promiseInProgress } = usePromiseTracker();
+    return(
+        <div className="loader">
+            {
+                (promiseInProgress === true) ?
+                    <Loader type="Circles" color="#FD0808"/>
+                    :
+                    null
+            }
+        </div>
 
+    );
+
+}
 ReactDOM.render(
   <React.StrictMode>
     <App />
+    <LoadingIndicator/>
   </React.StrictMode>,
   document.getElementById('root')
 );

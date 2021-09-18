@@ -3,7 +3,7 @@ import './shareButton.css'
 function ShareButton(props){
     const[copy,setCopy]=useState(false)
     const shareFunc=()=>{
-        navigator.clipboard.writeText(props.link)
+        navigator.clipboard.writeText(props.link) // Saves the image link to the clipboard
         if(copy===false){
             setCopy(true)
             setTimeout(function () {
