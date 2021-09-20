@@ -44,4 +44,9 @@
         width:280px;
     }
 
+    .caption{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
 }

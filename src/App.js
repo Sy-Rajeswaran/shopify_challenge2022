@@ -7,7 +7,7 @@ function App() {
     useEffect(()=>{
         trackPromise(getPosts()) // the trackPromise is used for a loading state
     },[]);
-    //Function to populate the posts
+    //Function to populate the posts using API request ideally would seperate this
     const getPosts =async ()=>{
         await fetch(`https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=100&api_key=RYTZybWCgSxaUiaFjpgXnfw7ZELgP3BfG309fG9a`)
             .then(response => response.json())
